@@ -14,7 +14,15 @@ RSS_FEEDS = {
     "TechCrunch": "https://techcrunch.com/feed/",
     "Wired": "https://www.wired.com/feed/rss",
     "Reuters_Business": "http://feeds.reuters.com/reuters/businessNews",
-    "CoinDesk": "https://www.coindesk.com/arc/outboundfeeds/rss/"
+    "CoinDesk": "https://www.coindesk.com/arc/outboundfeeds/rss/",
+    "36kr": "https://36kr.com/feed",
+    "meituanTech": "https://tech.meituan.com/feed",
+    "MIT Technology Review": "https://www.technologyreview.com/feed/",
+    "the Verge": "https://www.theverge.com/rss/index.xml",
+    "Hacker News": "https://news.ycombinator.com/rss",
+    "Financial Times": "https://www.ft.com/?format=rss",
+    "wall street cn": "https://rsshub.app/wallstreetcn/news/global",
+    "BeInCrypto": "https://beincrypto.com/feed/"
 }
 
 # 关键词过滤：包含这些词的内容会被打上“高价值”标签
