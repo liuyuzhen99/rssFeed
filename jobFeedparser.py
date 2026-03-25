@@ -123,7 +123,7 @@ def ai_curate_news(news_items):
 if __name__ == "__main__":
     results = fetch_and_filter()
     
-    print(f"\n--- 过去 24 小时兴趣岗位 (共 {len(results)} 条) ---")
+    print(f"\n--- 过去1天兴趣岗位 (共 {len(results)} 条) ---")
     # 先展示高价值资讯
     for news in results:
         print(f"🌟 [{news['source']}] {news['time']} - {news['title']}")
