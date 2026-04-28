@@ -6,7 +6,7 @@ import os
 
 client = OpenAI(
             api_key="sk-9fdc22a0cd39441aae1b3badfec3c120", 
-            base_url="https://api.deepseek.com"
+            base_url="https://api.deepseek.com/v1"
         )
 
 # 定义你感兴趣的 RSS 源
@@ -22,11 +22,12 @@ RSS_FEEDS = {
     "Hacker News": "https://news.ycombinator.com/rss",
     "Financial Times": "https://www.ft.com/?format=rss",
     "wall street cn": "https://rsshub.app/wallstreetcn/news/global",
-    "BeInCrypto": "https://beincrypto.com/feed/"
+    "BeInCrypto": "https://beincrypto.com/feed/",
+    "RobotPaper": "https://robotpaper.ai/rss/"
 }
 
 # 关键词过滤：包含这些词的内容会被打上“高价值”标签
-KEYWORDS = ["AI", "LLM", "Agent", "Fintech", "Web3", "Crypto", "Regulation"]
+KEYWORDS = ["AI", "LLM", "Agent", "Fintech", "Web3", "Crypto", "Regulation", "Technichal", "Development"]
 
 def fetch_and_filter():
     daily_news = []

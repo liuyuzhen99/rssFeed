@@ -6,7 +6,7 @@ import os
 
 client = OpenAI(
             api_key="sk-9fdc22a0cd39441aae1b3badfec3c120", 
-            base_url="https://api.deepseek.com"
+            base_url="https://api.deepseek.com/v1"
         )
 
 # 定义你感兴趣的 RSS 源
@@ -22,7 +22,7 @@ def fetch_and_filter():
     daily_news = []
     # 设置时间范围：过去 24 小时
     now = datetime.now()
-    one_day_ago = now - timedelta(days=1)
+    one_day_ago = now - timedelta(days=14)
 
     for source_name, url in RSS_FEEDS.items():
         print(f"正在抓取: {source_name}...")
@@ -123,7 +123,7 @@ def ai_curate_news(news_items):
 if __name__ == "__main__":
     results = fetch_and_filter()
     
-    print(f"\n--- 过去1天兴趣岗位 (共 {len(results)} 条) ---")
+    print(f"\n--- 过去14天兴趣岗位 (共 {len(results)} 条) ---")
     # 先展示高价值资讯
     for news in results:
         print(f"🌟 [{news['source']}] {news['time']} - {news['title']}")
